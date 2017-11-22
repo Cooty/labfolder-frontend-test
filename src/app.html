@@ -1,0 +1,20 @@
+<template>
+  <require from="./resources/styles/app.css"></require>
+  <require from="./people-form"></require>
+  <require from="./people-table"></require>
+  <require from="./sidebar"></require>
+  <require from="./traits-navigation"></require>
+
+  <people-form></people-form>
+  <div class="wrapper people-form-offset">
+        <div class="container-fluid">
+            <div class="row">
+                <main class="col-md-8">
+                    <people-table></people-table>
+                    <traits-navigation></traits-navigation>
+                </main>
+                <sidebar class="col-md-4"></sidebar>
+            </div>
+        </div>
+  </div>
+</template>

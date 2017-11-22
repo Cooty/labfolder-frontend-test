@@ -1,0 +1,7 @@
+<template>
+    <nav class="mt-4" if.bind="people.length">
+        <a href="${trait.name}" repeat.for="trait of traits" class="btn btn-outline-secondary mr-2">
+            ${trait.displayName}
+        </a>
+    </nav>
+</template>
