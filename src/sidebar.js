@@ -9,4 +9,6 @@ export class Sidebar {
     this.single = 'Person';
     this.plural = 'People';
   }
+
+  // TODO: Figure out a way how o loop thorugh the people and disect them by the traits they have
 }

@@ -1,5 +1,8 @@
 <template>
     <nav class="mt-4" if.bind="people.length">
+            <!-- TODO: Replace href with route-href, something like this -->
+            <!-- route-href="route: contacts; params.bind: {filter:trait}" -->
+            <!-- TODO: Iterate only over those traits that are currently in the list -->
         <a href="${trait.name}" repeat.for="trait of traits" class="btn btn-outline-secondary mr-2">
             ${trait.displayName}
         </a>

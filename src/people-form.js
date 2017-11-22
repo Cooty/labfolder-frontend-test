@@ -15,6 +15,14 @@ export class PeopleForm {
 
   add() {
     if (this.personName.length) {
+      // TODO: Figure out a better structure for passing traits, so I can traverse them by traits they have
+      // the chekedTraits only has values, so no way to map it against config.traits
+      // Ideal result should look like this, where I can explicitly tell who has what trait
+    //   let traits = [
+    //         {name: 'super-power', displayName: 'Super Power', hasIt: true},
+    //         {name: 'rich', displayName: 'Rich', hasIt: false},
+    //         {name: 'genius', displayName: 'Genius', hasIt: true}
+    //     ];
       this.people.push(new Person(this.personName, this.checkedTraits));
       this.personName = '';
       this.checkedTraits = [];

@@ -3,6 +3,7 @@
         <table class="table">
             <thead>
                 <tr>
+                    <!-- TODO: Add affordances for sortable headers, add event binding for sorter functions -->
                     <th scope="col">Name</th>
                     <th scope="col" repeat.for="trait of traits">
                         ${trait.displayName}
@@ -15,6 +16,7 @@
                     <td>
                         ${person.name}
                     </td>
+                    <!-- TODO: Figure out how to loop throug the traits in such a way that I can get each Person by their traits + add 'Yew' / 'No' next to the checkboxes -->
                     <td>
                         <input type="checkbox">
                     </td>
@@ -25,6 +27,7 @@
                         <input type="checkbox">
                     </td>
                     <td>
+                        <!-- TODO: Add a hidden panel that opens up with the actual delelte and a cancel button -->
                         <button type="button" class="btn btn-danger btn-sm">Delete</button>
                     </td>
                 </tr>
